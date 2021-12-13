@@ -1,0 +1,9 @@
+<div
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: isOnline }"
+>
+  <p>Name: {{ name }}</p>
+  <p>ID: {{ serverId }}</p>
+  <p>Status: {{ isOnline ? "Online" : "Offline" }}</p>
+</div>
+<button (click)="toggleServerStatus()">Toggle On/Off</button>
